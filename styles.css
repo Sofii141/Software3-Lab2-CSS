@@ -1,0 +1,138 @@
+/**
+ * Hoja de Estilo para el Laboratorio 2: Hojas de estilo mediante CSS
+ * Autor: Ana Sofia Arango Yanza
+ * Fecha: 28 de agosto de 2025
+ * Descripción: Estilos para una página que muestra información sobre lenguajes de programación.
+ */
+
+/* Importación de la fuente 'Nunito' desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+/* Estilos globales para toda la página */
+html {
+    font-family: 'Nunito', sans-serif; 
+}
+
+/* === SECCIÓN 1: ESTILOS PARA EL ENCABEZADO === */
+
+/* Selector de clase para el contenedor principal del encabezado */
+.encabezado {
+    display: flex; /* Habilita Flexbox para alinear los elementos hijos */
+    align-items: center; /* Centra verticalmente la imagen y el título */
+    justify-content: center; /* Centra horizontalmente el conjunto */
+    gap: 350px; /* Crea un espacio horizontal grande entre la imagen y el título */
+}
+
+/* Estilos para el título principal H1 */
+.encabezado h1 {
+    color: #80b2f3; 
+    font-size: 2.7em;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estilos para la imagen dentro del encabezado */
+.encabezado img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* === SECCIÓN 2: ESTILOS PARA LA GRILLA DE TARJETAS (CARDS) === */
+
+/* Selector de clase para el contenedor de la grilla */
+.grid-container {
+    display: grid; /* Habilita CSS Grid para el layout */
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de ancho flexible e igual */
+    gap: 15px; /* Espacio entre las tarjetas */
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Imagenes de las targetas */
+.grid-container img {
+    width: 100px; 
+    height: 100px;
+    object-fit: contain; /* Evita que las imágenes se deformen */
+}
+ 
+/* Estilos para los títulos H2 dentro de las tarjetas */
+.grid-container h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Estilos base compartidos por todas las tarjetas (DIVs dentro del grid) */
+.grid-container div {
+    border-radius: 20px; 
+    padding: 15px; 
+    color: white; 
+}
+
+/* Selector de agrupación para alinear el texto de tarjetas específicas a la derecha */
+#go-container,
+#typescript-container {
+    text-align: right;
+}
+
+/* Selector de agrupación para centrar el texto de tarjetas específicas */
+#java-container,
+#swift-container {
+    text-align: center;
+}
+
+/* Selectores de ID para dar estilos únicos (background y border) a cada tarjeta */
+#go-container {
+    background-color: rgb(141, 214, 248);
+    border: 3px solid rgb(51, 175, 233);
+}
+
+#java-container {
+    background-color: #5382a1;
+    border: 3px solid #5a5353;
+}
+
+#c-container {
+    background-color: #649AD2;
+    border: 3px solid #2f8de6;
+}
+
+#js-container {
+    background-color: rgb(252, 226, 110);
+    border: 3px solid rgb(251, 255, 0);
+}
+
+#swift-container {
+    background-color: rgb(253, 164, 129);
+    border: 3px solid rgb(240, 130, 5);
+}
+
+#typescript-container {
+    background-color: rgb(76, 127, 236);
+    border: 3px solid rgb(38, 0, 255);
+}
+
+/* === SECCIÓN 3: ESTILOS PARA LA DESCRIPCIÓN FINAL === */
+
+/* Selector de clase para el contenedor de la descripción */
+.descripcion {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center; /* Centra todo el contenido (título, párrafo y enlace) */
+    border: 1px solid #e9ecef;
+    margin-top: 20px;
+}
+
+/* Estilos para el título H2 de la descripción */
+.descripcion h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el párrafo de la descripción */
+.descripcion p {
+    color: #555;
+    line-height: 1.6; /* Aumenta el interlineado */
+}
