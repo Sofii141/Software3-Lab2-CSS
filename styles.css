@@ -8,8 +8,14 @@
 /* Importación de la fuente 'Nunito' desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
 
-/* Estilos globales para toda la página */
-html {
+/* Reglas globales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
     font-family: 'Nunito', sans-serif; 
 }
 
@@ -17,10 +23,12 @@ html {
 
 /* Selector de clase para el contenedor principal del encabezado */
 .encabezado {
-    display: flex; /* Habilita Flexbox para alinear los elementos hijos */
-    align-items: center; /* Centra verticalmente la imagen y el título */
-    justify-content: center; /* Centra horizontalmente el conjunto */
-    gap: 350px; /* Crea un espacio horizontal grande entre la imagen y el título */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribuye el espacio automáticamente */
+    max-width: 1400px; /* Evita que se estire demasiado en pantallas grandes */
+    margin: 0 auto; /* Centra el contenedor del encabezado */
+    gap: 20px; /* Un gap pequeño para que no se peguen si la pantalla es muy estrecha */
 }
 
 /* Estilos para el título principal H1 */
@@ -38,7 +46,7 @@ html {
     object-fit: contain;
 }
 
-/* === SECCIÓN 2: ESTILOS PARA LA GRILLA DE TARJETAS (CARDS) === */
+/* === SECCIÓN 2: ESTILOS PARA LA GRILLA DE TARJETAS === */
 
 /* Selector de clase para el contenedor de la grilla */
 .grid-container {
@@ -47,6 +55,7 @@ html {
     gap: 15px; /* Espacio entre las tarjetas */
     font-weight: 400;
     font-style: normal;
+    padding: 0 40px; 
 }
 
 /* Imagenes de las targetas */
@@ -118,7 +127,7 @@ html {
 /* Selector de clase para el contenedor de la descripción */
 .descripcion {
     background-color: #f8f9fa;
-    padding: 25px;
+    padding: 28px;
     border-radius: 20px;
     text-align: center; /* Centra todo el contenido (título, párrafo y enlace) */
     border: 1px solid #e9ecef;
