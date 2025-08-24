@@ -8,6 +8,7 @@ Página web estática desarrollada para el Laboratorio 2 de Ingeniería del Soft
 
 Puedes ver el proyecto desplegado en vivo en GitHub Pages a través del siguiente enlace:
 
+**[https://sofii141.github.io/Software3-Lab2-CSS/](https://sofii141.github.io/Software3-Lab2-CSS/)**
 
 ## 🚀 Visualización Previa
 
